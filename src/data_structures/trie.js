@@ -68,9 +68,7 @@ class Trie {
   }
 
   createPrefixWordList(node, words = []) {
-    console.log(`!!!`, node.words);
     node.words.forEach(word => {
-      console.log(`### `, word)
       words.push(word)
     })
     Object.values(node.children).forEach(child => {
